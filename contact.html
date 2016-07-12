@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Contact | Fidèle tout sur vos animaux domestiques</title>
+        <link href="style.css" rel="stylesheet" />
+        <link href="zoombox.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    
+    <body>
+        <div id="bandeau-haut">
+            <div id="contenu-bandeau"><button type="button"><img src="images-fidele/loupe.jpg" alt="recherche" /></button>
+                <input type="search" id="recherche" name="recherche" placeholder="Recherche" />
+            </div>
+        </div>
+        <div id="page">
+            <header id ="entete">
+                <a href="index.html">
+                    <img src="images-fidele/logo-fidele.jpg" alt="www.fidele.com" /></a>
+                
+<!-- Menu Principal -->
+                
+        <nav id="menu-principal">
+            <ul>
+            <li><a href="index.html">Accueil</a>
+                </li>
+            <li><a href="#">Portfolio</a>
+                </li>
+            <li><a href="#">Produits</a>
+                </li>
+            <li><a href="#">Blog</a>
+                </li>
+            <li><a href="#">Boutique</a>
+                </li>
+            <li><a href="contact.html" class="choix">Contact</a>
+                </li>
+            </ul>
+                
+        </nav>
+            
+<!-- Fin du Menu Principal -->
+            
+            </header>
+        <p class="clear"></p>
+            
+            
+            
+<!-- -----------  Contenu Formulaire  -------- --> 
+    
+<section id="formulaire">
+    <h2>Laissez-nous un message</h2>
+        <form action="traitement.php" method="post">
+            <fieldset>
+                <legend>Vos Coordonnées</legend>
+                <p><input type="radio" name="civilite" id="M" /><label class="radiobox" for="M">M</label>
+                <input type="radio" name="civilite" id="Mme" /><label class="radiobox" for="Mme">Mme</label>
+                    <input type="radio" name="civilite" id="Mlle" /><label class="radiobox" for="Mlle">Mlle</label></p>
+
+                <p><label for="nom">Votre nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom..." /></p>
+                <p><label for="prenom">Votre   prénom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prenom..." /></p>
+                <p><label for="adresse">Votre adresse</label><textarea name="adresse" id="adresse" rows="4" cols="50" placeholder="Votre Adresse..."></textarea></p>
+                <p><label for="codePostal">Votre code postal</label>
+                    <input type="text" name="codePostal" id="codePostal" placeholder="Votre code postal..." /><label for="ville">Votre ville</label>
+                    <input type="text" name="ville" id="ville" placeholder="Votre ville..." /></p> <!-- CP et Ville sont sur la même ligne !! -->
+                <p><label for="pays">Votre pays</label>
+                    <select name="pays" id="pays"><option value="france">France</option><option value="belgique">Belgique</option><option value="suisse">Suisse</option><option value="royaume-uni">Royaume-Uni</option><option value="espagne">Espagne</option><option value="italie">Italie</option><option value="autre">Autre</option></select>
+                </p>
+            </fieldset>
+
+        <fieldset>
+            <legend>Votre message</legend>  
+                <p>Vos animaux: <input type="checkbox" name="animaux" id="chat" /><label class="radiobox" for="chat">Chat</label>
+                <input type="checkbox" name="animaux" id="chien" /><label class="radiobox" for="chien">Chien</label>
+                <input type="checkbox" name="animaux" id="autres" /><label class="radiobox" for="autres">Autres</label></p>
+            
+                <p><label for="tel">Téléphone<br />où vous joindre</label><input type="tel" name="tel" id="tel" placeholder="Votre téléphone" /></p>
+
+                <p><label for="email">Votre e-mail</label><input type="email" name="email" id="email" placeholder="Votre e-mail..." /></p>
+
+                <p><label for="message">Votre message</label><textarea name="message" id="message" rows="10" cols="50" placeholder="Votre message..."></textarea></p>
+            </fieldset>
+            
+    <p><input type="submit" value="Envoyer" /><input type="reset" value="Annuler" /></p>
+    </form>
+ </section>         
+   
+            
+            
+            
+<!-- Plan -->    
+            
+<aside id="plan">  
+    
+    <h2>Pour nous trouver</h2>
+    <h4>Fidèle</h4>
+    <p>ZAC de Luscanen,
+        <br /> 19 Rue Dr Léonce Franco,
+        <br />56880 PLOEREN</p>
+    
+    <a href="images-fidele/fidelemap.jpg" class="zoombox" title="Vannes centre"><img src="images-fidele/fidelemap.jpg" /></a>
+    <iframe src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42989.39282245375!2d-2.824473381042491!3d47.668161849014616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0913ee71e64d0819!2sDecathlon+Vannes!5e0!3m2!1sfr!2sfr!4v1464080916019" width="300" height="400"" allowfullscreen"></iframe>
+
+</aside>
+
+<!-- Fin du formulaire -->            
+
+             
+<p class="clear"></p>            
+<!-- Liens Directs -->
+            
+    <div id="liens-directs">
+    <div class="liens"><a href="#">
+        <span class="police">C</span><br />
+        Albums</a>
+        </div>        
+    <div class="liens"><a href="contact.html">
+        <span class="police">M</span><br />
+        Contact</a>
+        </div>
+    <div class="liens"><a href="#">
+        <span class="police">h</span><br />
+        Coups de coeur</a>
+        </div>
+    <div class="liens nomarge"><a href="#">
+        <span class="police">U</span><br />
+        Agenda</a>
+        </div>
+    </div>
+
+            
+            
+<!-- Footer -->            
+            
+<footer id="pied">
+    <aside id="blocs-pied">
+        <div class="blocs-pied">
+            <a href="www.index.com">
+                <img src="images-fidele/logo-fidele.jpg" width="200" alt="www.fidele.com" class="logopied" /></a>
+        <p>Phasellus porta, nibh quis viverra posuere, lectus dui consectetur purus, in placerat nisi orci eget dui. Fusce cursus sapien urna, at sollicitudin sapien sagittis non. Aenean suscipit scelerisque nibh at gravida. Vivamus pretium urna eu quam eleifend, eu fringilla purus rhoncus. Duis iaculis pretium</p>
+        </div>
+        <div class="blocs-pied">
+                <h3>Nous Contacter</h3>
+                <p>tel: 01 77 77 77 77<br />
+                Mail: contact[at]gmail.com</p>
+
+                <h3>Nous Suivre</h3>
+            <a href="#">
+                <img src="images-fidele/facebook.jpg" alt="www.facebook.com" class="reseaux"/></a>
+        </div>
+            <div class="blocs-pied">
+                <h3>Vidéo du Moment</h3>
+                <iframe width="240" height="135" src="https://www.youtube.com/embed/cggl4WN77Mw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="blocs-pied nomarge">
+            <h3>Nos Partenaires</h3>
+            <figure id="partenaires">
+                <a href="#"><img src="images-fidele/logo-royal-canin.png" alt="royalcanin" /></a>
+                <a href="#"><img src="images-fidele/logo-pro-plan.png" alt="proplan" /></a>
+                <a href="#"><img src="images-fidele/logo-hery.png" alt="hery" /></a>
+                <a href="#"><img src="images-fidele/logo-petsafe.png" alt="petsafe" /></a>
+                </figure>
+        </div>
+    </aside>
+    <p class="clear"></p> <!-- Permet d'arrêter tous les effets Float au niveau de cette limite -->
+    
+    
+    
+<!-- ---------Dernière ligne du footer------- -->
+   
+    <nav id="menu-pied">
+            <ul>
+            <li><a href="index.html" class="choix">Accueil</a>
+                </li>
+            <li><a href="contact.html">Contact</a>
+                </li>
+            <li><a href="#">Produits</a>
+                </li>
+            <li><a href="#">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+    
+    <p class="copyright">Copyright Greta 2016</p>
+      
+        
+    
+            </footer>
+<!-- -------------- Fin du footer ----- -->
+         
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/zoombox.js"></script>
+            <script type="text/javascript">
+                jQuery(function ($) {
+                    $('a.zoombox').zoombox();
+                });
+            </script>
+        
+        
+        
+        </div>
+    </body>
+</html>

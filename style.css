@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Font face de FontSquirrel */
+
+@font-face {
+    font-family: 'kitty_cats_tfbregular';
+    src: url('polices/kitty_cats_tfb-webfont.woff2') format('woff2'),
+         url('polices/kitty_cats_tfb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "Myriad Pro", Arial;
+}
+
+#bandeau-haut {
+    width: 100%;
+    background-color: #000;
+    height: 50px;
+}
+
+#bandeau-haut #contenu-bandeau{
+    width: 1170px;
+    margin: 0 auto;
+}
+#bandeau-haut #contenu-bandeau input {
+    float: right;
+    margin-top: 10px;
+    height: 25px;
+    border: none;
+    background-color: #9A9290;
+    color: #FFF;
+    padding-left: 5px;
+} 
+
+#bandeau-haut #contenu-bandeau button{
+    float: right;
+    background-color: transparent;
+    border: none;
+    margin-top: 9px;
+    margin-left: -5px;
+}
+
+#page{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* header de la page */
+
+#entete{
+    width: 100%;
+}
+
+#entete img{
+    float: left;
+}
+
+#menu-principal{
+    padding-top: 70px;
+    text-align: right;
+}
+
+#menu-principal ul{
+    list-style-type: none; /* pas de puce*/
+}
+
+#menu-principal ul li{
+    display: inline; /*Aligner les mots */
+    margin-left: 30px;
+}
+
+#menu-principal ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#menu-principal ul li a:hover{
+    color: #F46523;
+}
+
+
+/* Slider */
+
+#slider{
+    width: 100%;
+}
+
+
+/* Derniers articles */
+
+#derniers-articles{
+    width: 100%;
+}
+
+#derniers-articles h2{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#derniers-articles .en-avant{
+    width: 570px;
+    height: 270px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+#derniers-articles .en-avant img{
+    width: 270px;
+    height: 270px;
+    float: left;
+    margin-right: 5px;
+}
+
+#derniers-articles .en-avant h3{
+    font-size: 23px;
+    padding-top: 15px;
+}
+
+#derniers-articles .en-avant h4{
+    float: right;
+    background-color: #F46523; /*reprise de couleur de l'hover */
+    color: #FFF; /* couleur blanche */
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px;
+    
+}
+
+.text30{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#derniers-articles .en-avant p{
+    margin-top: 25px;
+}
+
+#derniers-articles .en-avant p a{
+    text-decoration: none;
+    color: #F46523;
+}
+
+#derniers-articles .en-avant .nomarge{
+    margin-right: 0px;
+}
+
+
+/* bloc Liens Directs */
+
+#liens-directs{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#liens-directs .liens{
+    width: 270px;
+    height: 120px; /* -30 à cause du padding à 30 */
+    background-color: #DBDBDB;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#liens-directs .liens:hover{
+    background-color: #F46523;
+}
+
+#liens-directs .liens.nomarge{
+    margin-right: 0px;
+}
+
+#liens-directs .liens a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Classe pour utiliser la Police FontSquirrel */
+
+.police{
+    font-size: 55px;
+    font-family: 'kitty_cats_tfbregular';  
+}
+
+
+
+/* ----- Footer ------ */
+
+
+#pied{
+    background-color: #DBDBDB;
+    width: 100%;
+    min-height: 50px;
+    clear: left;
+    float: left;
+    margin-top: 30px;
+}
+
+.blocs-pied{
+    width: 270px;
+    margin-right: 30px;
+    float: left;
+    
+}
+
+.blocs-pied img.logopied, .blocs-pied p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.blocs-pied img.reseaux{
+    border: 1px solid #fff;
+}
+
+.blocs-pied #partenaires{
+    margin: 0 5px 5px 0;
+}
+
+.blocs-pied h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.blocs-pied h3{
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.blocs-pied iframe {
+   width: 250px; 
+}
+
+#pied .blocs-pied.nomarge{
+    margin-right: 0;
+}
+
+p.clear{
+    clear: both;
+}
+
+#pied p.copyright{
+    width: 25%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#menu-pied{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+#menu-pied ul{
+    list-style-type: none;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#menu-pied ul li{
+    display: inline;
+    margin-left: 5px;
+    border-left: 1px solid #000;
+    padding-left: 5px;
+}
+
+#menu-pied ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+#menu-pied ul li:first-child{
+    border-left: none;
+}
+
+
+
+
+/* ---------------- Page Contact ----------- */
+
+
+#formulaire {
+    width: 70%;
+    float: left;
+    padding-top: 20px;
+}
+
+#formulaire h2 {
+    margin-left: 60px;
+}
+#formulaire p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 0.8em;
+}
+
+#formulaire form fieldset{
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-top: 15px;
+}
+
+#formulaire form fieldset legend{
+    color: #F46523;
+    font-weight: bold;
+}
+
+#formulaire form label{
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+#formulaire form input{
+    height: 25px;
+    background-color: #CCC;
+}
+
+#formulaire form textarea{
+    background-color: #CCC;
+}
+
+#formulaire form label.radiobox{
+    width: 40px;
+}
+
+
+#plan {
+    margin-top: 30px;
+    width: 30%;
+    float: left;
+}
+
+#plan h2 {
+    margin-bottom: 15px;
+}
+
+#plan iframe {
+    border: 1px solid black;
+    width: 85%;
+}
+
+#plan img {
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    display: block;
+}
+
+
+
+/* ---------------- Abandonnés - Suite --------------- */
+
+#suite1{
+    width: 100%;
+}
+
+#suite1 div.details{
+    width: 30%;
+    float: left;
+    margin-right: 55px;
+    padding-bottom: 70px;
+    padding-top: 20px;
+}
+
+#suite1 div.details.nomarge{
+    margin: 0px;
+}
+
+#suite1 div p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#suite1 fieldset p textarea {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.envoyer {
+       
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
+
+.first {
+    font-weight: bold;
+}
+
+table border {
+    color: #F46523;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
